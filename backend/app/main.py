@@ -52,7 +52,7 @@ async def estimate_credits(content_type: str):
 
 
 @app.post("/api/research/start", response_model=schemas.ResearchResponse)
-async def start_research(
+def start_research(
     request: schemas.ResearchRequest,
     background_tasks: BackgroundTasks,
     db: Session = Depends(get_db),
@@ -89,7 +89,7 @@ async def start_research(
 
 
 @app.get("/api/research/{job_id}/status", response_model=schemas.JobStatusResponse)
-async def get_job_status(job_id: int, db: Session = Depends(get_db)):
+def get_job_status(job_id: int, db: Session = Depends(get_db)):
     job = (
         db.query(models.ResearchJob)
         .filter(models.ResearchJob.id == job_id)
