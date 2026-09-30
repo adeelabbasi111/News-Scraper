@@ -1,0 +1,32 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.pytest_cache/
+
+# Environment Variables & Secrets (CRITICAL)
+.env
+backend/.env
+*.env
+
+# SQLite Database
+*.db
+*.sqlite3
+news_scraper.db
+backend/news_scraper.db
+
+# Generated PDFs / Exports
+backend/app/exports/*.pdf
+backend/app/utils/exports/
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

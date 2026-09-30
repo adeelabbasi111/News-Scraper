@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+python-dotenv
+requests
+beautifulsoup4
+trafilatura
+jinja2
+google-genai
+fpdf2
+pytest
